@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariel Jewelry - Joyería Elegante</title>
+    <meta name="description" content="Joyería artesanal exclusiva, elegancia y diseño en cada pieza. Descubre nuestras colecciones y productos destacados.">
+    <meta name="keywords" content="joyería, artesanal, lujo, moda, collares, anillos, aretes, brazaletes, Mariel Jewelry">
+    <meta name="author" content="Mariel Jewelry">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Mariel Jewelry - Joyería Elegante">
+    <meta property="og:description" content="Descubre la elegancia en cada detalle con nuestra colección exclusiva de joyería artesanal.">
+    <meta property="og:image" content="images/hero-jewelry.jpg">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Agregar CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a id="inicio"></a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm rounded-bottom sticky-top py-3 px-4" style="backdrop-filter: blur(8px);">
+            <div class="container-fluid">
+                <div class="logo d-flex align-items-center">
+                    <i class="bi bi-gem me-2" style="font-size:2rem;color:var(--primary-color);"></i>
+                    <h1 class="mb-0" style="font-size:2rem;letter-spacing:2px;">Mariel Jewelry</h1>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-links">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="colecciones.html">Colecciones</a></li>
+                        <li class="navv-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#enlaces-interes">Enlaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="articulos.html">Artículos</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center nav-icons ms-3">
+                        <a href="#buscar" class="me-3" aria-label="Buscar"><i class="fas fa-search"></i></a>
+                        <a href="#carrito" class="cart-icon me-3 position-relative" aria-label="Carrito de compras">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </a>
+                        <a href="#" id="aboutUsBtn" aria-label="Sobre Nosotros"><i class="fas fa-user"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Apartado destacado sobre la elegancia -->
+    <div class="container mb-4" style="margin-top: 48px;">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center p-4 shadow-lg rounded-4" style="background: linear-gradient(120deg, #fffbe6 60%, #f7e9ce 100%); border: 2px solid var(--gold-dark);">
+                <h2 class="fw-bold mb-2" style="color: var(--primary-color); letter-spacing: 2px; font-size: 2.3rem; text-shadow: 0 2px 12px #d4af3740, 0 1px 0 #fff;">
+                    <i class="bi bi-gem" style="color: var(--gold-dark); font-size: 2.1rem; vertical-align: middle;"></i>
+                    Descubre la Elegancia en Cada Detalle
+                </h2>
+                <p class="lead mb-0" style="color: #7a6c4d; font-size: 1.25rem; text-shadow: 0 1px 8px #fffbe6;">
+                    Colección exclusiva de joyería artesanal para realzar tu estilo y personalidad.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carrusel Bootstrap -->
+    <section id="carrusel" class="container my-5">
+        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/carrusel-1.jpg" class="d-block w-100 carousel-img" alt="Joyería Mariel 1">
+                    <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carrusel-2.jpg" class="d-block w-100 carousel-img" alt="Joyería Mariel 2">
+                    <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carrusel-3.jpg" class="d-block w-100 carousel-img" alt="Joyería Mariel 3">
+                    <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Modal del Carrito -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Tu Carrito</h2>
+                <button class="close-cart" aria-label="Cerrar carrito">&times;</button>
+            </div>
+            <div class="cart-items">
+                <!-- Los items del carrito se agregarán dinámicamente aquí -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="total-amount">$0.00</span>
+                </div>
+                <button class="btn-primary checkout-btn">Proceder al Pago</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup de Mensaje -->
+    <div class="overlay" id="overlay"></div>
+    <div class="message-popup" id="messagePopup">
+        <i class="fas fa-check-circle"></i>
+        <p>¡Mensaje enviado con éxito!</p>
+        <button onclick="closeMessagePopup()">Aceptar</button>
+    </div>
+
+    <!-- Modal de Políticas de Privacidad -->
+    <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="privacyModalLabel">Políticas de Privacidad</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <p>En Mariel Jewelry, valoramos tu privacidad. Toda la información personal proporcionada será utilizada únicamente para procesar tus pedidos y mejorar tu experiencia en nuestro sitio. No compartimos tus datos con terceros sin tu consentimiento.</p>
+            <ul>
+              <li>Recopilamos datos solo para fines de contacto y envío.</li>
+              <li>Tu información está protegida y cifrada.</li>
+              <li>Puedes solicitar la eliminación de tus datos en cualquier momento.</li>
+            </ul>
+            <p>Para más información, contáctanos a <a href="mailto:info@marieljewelry.com">info@marieljewelry.com</a>.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Sobre Nosotros -->
+    <div class="modal fade" id="aboutUsModal" tabindex="-1" aria-labelledby="aboutUsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4" style="background: linear-gradient(120deg, #fffbe6 60%, #f7e9ce 100%); box-shadow: 0 4px 24px #d4af3740;">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title w-100 text-center fw-bold" id="aboutUsModalLabel" style="color: var(--primary-color); letter-spacing: 1px;">Sobre Nosotros</h5>
+            <button type="button" class="btn-close position-absolute end-0 me-3 mt-2" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body text-center py-4">
+            <i class="bi bi-gem" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+            <p class="fs-5 mb-2 mt-3" style="color: #7a6c4d;">Creada el <span style="color:var(--primary-color);font-weight:bold;">23 de septiembre 2024</span> con la finalidad de expandir la joyería artesanal haciéndote lucir espectacular.</p>
+            <p class="fw-bold mb-0" style="color: var(--secondary-color);">Fundadora: <span style="color: var(--primary-color);">Emily Disla</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de Búsqueda -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title w-100 text-center fw-bold" id="searchModalLabel" style="color: var(--primary-color); letter-spacing: 1px;">Buscar en Mariel Jewelry</h5>
+            <button type="button" class="btn-close position-absolute end-0 me-3 mt-2" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body text-center py-4">
+            <form id="searchForm" class="d-flex flex-column align-items-center gap-3">
+              <input type="text" class="form-control w-100" id="searchInput" placeholder="¿Qué deseas buscar?" autofocus required style="max-width: 350px;">
+              <button type="submit" class="btn btn-primary w-100" style="max-width: 350px;">Buscar</button>
+            </form>
+            <div id="searchResult" class="mt-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h2>Descubre la Elegancia en Cada Detalle</h2>
+                <p>Colección exclusiva de joyería artesanal</p>
+                <a href="#colecciones" class="btn-primary">Ver Colección</a>
+            </div>
+        </section>
+
+        <section id="colecciones" class="collections py-5" style="background: linear-gradient(120deg, #fffbe6 60%, #f7e9ce 100%); border-radius: 2rem; box-shadow: 0 4px 24px #d4af3740;">
+            <div class="container">
+                <h2 class="display-6 fw-bold text-center mb-4" style="color: var(--primary-color); letter-spacing: 1px;">Nuestras Colecciones</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <div class="collection-card card border-0 shadow-lg h-100 text-center p-3" style="border-radius: 1.5rem; background: #fff;">
+                            <img src="images/reloj luxury.jpg" alt="Colección Primavera" class="mb-3" style="border-radius: 1.5rem 1.5rem 0 0; height: 220px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="collection-card card border-0 shadow-lg h-100 text-center p-3" style="border-radius: 1.5rem; background: #fff;">
+                            <img src="images/jewelry.jpg" alt="Colección Elegancia" class="mb-3" style="border-radius: 1.5rem 1.5rem 0 0; height: 220px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="collection-card card border-0 shadow-lg h-100 text-center p-3" style="border-radius: 1.5rem; background: #fff;">
+                            <img src="images/ring ring.jpg" alt="Colección Minimal" class="mb-3" style="border-radius: 1.5rem 1.5rem 0 0; height: 220px; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="productos" class="products">
+            <h2 class="display-6 fw-bold text-center mb-4" style="color: var(--primary-color); letter-spacing: 1px; text-shadow: 0 2px 8px #fffbe6;">Productos Destacados</h2>
+            <div class="product-grid d-flex flex-wrap justify-content-center gap-4">
+                <div class="product-card" data-featured="true">
+                    <img src="images/product-1.jpg" alt="Anillo Rubí">
+                    <h3>Anillo Rubí</h3>
+                    <p class="price">$1,200</p>
+                    <button class="btn-secondary add-to-cart" data-id="1" data-name="Anillo Rubí" data-price="1200">Añadir al Carrito</button>
+                </div>
+                <div class="product-card" data-featured="true">
+                    <img src="images/product-2.jpg" alt="Collar Perlas">
+                    <h3>Collar Perlas</h3>
+                    <p class="price">$800</p>
+                    <button class="btn-secondary add-to-cart" data-id="2" data-name="Collar Perlas" data-price="800">Añadir al Carrito</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product-3.jpg" alt="Brazaletes Oro Laminado">
+                    <h3>Brazaletes Oro Laminado</h3>
+                    <p class="price">$950</p>
+                    <button class="btn-secondary add-to-cart" data-id="3" data-name="Brazaletes Oro Laminado" data-price="950">Añadir al Carrito</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product-4.jpg" alt="Pendientes de Diamantes">
+                    <h3>Pendientes de Diamantes</h3>
+                    <p class="price">$1,500</p>
+                    <button class="btn-secondary add-to-cart" data-id="4" data-name="Pendientes de Diamantes" data-price="1500">Añadir al Carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Características con listas -->
+        <section id="caracteristicas" class="features py-5" style="background: linear-gradient(120deg, #fffbe6 60%, #f7e9ce 100%);">
+            <div class="container">
+                <div class="row justify-content-center mb-4">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="display-5 fw-bold mb-3" style="color: var(--primary-color); letter-spacing: 1px;">¿Por qué elegir <span style="color: var(--secondary-color);">Mariel Jewelry</span>?</h2>
+                        <p class="lead" style="color: #7a6c4d;">Descubre la diferencia de lucir piezas únicas, hechas con pasión y elegancia. Cada joya cuenta una historia y resalta tu belleza natural.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="p-4 h-100 shadow rounded-4 bg-white d-flex flex-column align-items-center justify-content-center">
+                            <h3 class="h5 mb-3" style="color: var(--primary-color);">Ventajas principales</h3>
+                            <div class="row g-3">
+                                <div class="col-12 d-flex align-items-center">
+                                    <div class="icon-circle me-3"><i class="bi bi-brush" style="color: var(--primary-color);"></i></div>
+                                    <span class="fw-semibold">Diseño artesanal exclusivo</span>
+                                </div>
+                                <div class="col-12 d-flex align-items-center">
+                                    <div class="icon-circle me-3"><i class="bi bi-gem" style="color: var(--primary-color);"></i></div>
+                                    <span class="fw-semibold">Materiales de alta calidad</span>
+                                </div>
+                                <div class="col-12 d-flex align-items-center">
+                                    <div class="icon-circle me-3"><i class="bi bi-person-heart" style="color: var(--primary-color);"></i></div>
+                                    <span class="fw-semibold">Atención personalizada</span>
+                                </div>
+                                <div class="col-12 d-flex align-items-center">
+                                    <div class="icon-circle me-3"><i class="bi bi-truck" style="color: var(--primary-color);"></i></div>
+                                    <span class="fw-semibold">Envíos a todo el país</span>
+                                </div>
+                                <div class="col-12 d-flex align-items-center">
+                                    <div class="icon-circle me-3"><i class="bi bi-shield-check" style="color: var(--primary-color);"></i></div>
+                                    <span class="fw-semibold">Garantía de satisfacción</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-4 h-100 shadow rounded-4 bg-white d-flex flex-column align-items-center justify-content-center">
+                            <h3 class="h5 mb-3" style="color: var(--primary-color);">Lo que ofrecemos</h3>
+                            <ul class="list-group w-100">
+                                <li class="list-group-item border-0 bg-transparent"><i class="bi bi-gem me-2" style="color: var(--primary-color);"></i>Collares, anillos, aretes y brazaletes</li>
+                                <li class="list-group-item border-0 bg-transparent"><i class="bi bi-star me-2" style="color: var(--primary-color);"></i>Ediciones limitadas</li>
+                                <li class="list-group-item border-0 bg-transparent"><i class="bi bi-gift me-2" style="color: var(--primary-color);"></i>Promociones exclusivas</li>
+                                <li class="list-group-item border-0 bg-transparent"><i class="bi bi-headset me-2" style="color: var(--primary-color);"></i>Atención al cliente 24/7</li>
+                                <li class="list-group-item border-0 bg-transparent"><i class="bi bi-box-seam me-2" style="color: var(--primary-color);"></i>Embalaje de regalo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact py-5" style="background: linear-gradient(120deg, #fffbe6 60%, #f7e9ce 100%);">
+            <div class="container">
+                <div class="row justify-content-center mb-4">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="display-5 fw-bold mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Contáctanos</h2>
+                        <p class="lead" style="color: #7a6c4d;">¿Tienes dudas o quieres una joya personalizada? Escríbenos, será un placer ayudarte.</p>
+                    </div>
+                </div>
+                <div class="row g-4 align-items-stretch">
+                    <div class="col-md-6">
+                        <div class="p-4 shadow rounded-4 bg-white h-100">
+                            <form class="contact-form">
+                                <div class="mb-3">
+                                    <label class="form-label fw-semibold" for="nombre">Nombre</label>
+                                    <input id="nombre" type="text" class="form-control" placeholder="Nombre" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-semibold" for="email">Email</label>
+                                    <input id="email" type="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-semibold" for="mensaje">Mensaje</label>
+                                    <textarea id="mensaje" class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                            </form>
+                            <a href="mailto:info@marieljewelry.com" class="btn btn-outline-primary w-100 mt-3">Enviar correo</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-4 shadow rounded-4 bg-white h-100 d-flex flex-column justify-content-center">
+                            <h3 class="h5 mb-3" style="color: var(--primary-color);">Información de Contacto</h3>
+                            <div class="mb-3 d-flex align-items-center">
+                                <div class="icon-circle me-3"><i class="fas fa-map-marker-alt"></i></div>
+                                <span class="fw-semibold">Dirección: Universidad Nacional Pedro Henríquez Ureña (UNPHU)</span>
+                            </div>
+                            <div class="mb-3 d-flex align-items-center">
+                                <div class="icon-circle me-3"><i class="fas fa-phone"></i></div>
+                                <span class="fw-semibold">Teléfono: 829-253-7788</span>
+                            </div>
+                            <div class="mb-3 d-flex align-items-center">
+                                <div class="icon-circle me-3"><i class="fas fa-envelope"></i></div>
+                                <span class="fw-semibold">Email: info@marieljewelry.com</span>
+                            </div>
+                            <div class="mt-4">
+                                <span class="fw-semibold">Síguenos:</span>
+                                <div class="social-links mt-2">
+                                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Enlaces de Interés con iFrames -->
+        <section id="enlaces-interes" class="container my-5 py-5" style="background: linear-gradient(120deg, #fffbe6 60%, #f7e9ce 100%); border-radius: 2rem; box-shadow: 0 4px 24px #d4af3740;">
+            <h2 class="display-6 fw-bold text-center mb-4" style="color: var(--primary-color); letter-spacing: 1px;">Enlaces de Interés</h2>
+            <div class="row justify-content-center align-items-center g-5">
+                <div class="col-md-6 mb-4">
+                    <div class="card border-0 shadow-lg h-100 p-3" style="border-radius: 1.5rem; background: #fff;">
+                        <h4 class="mb-3 text-center" style="color: var(--primary-color);"><i class="bi bi-youtube me-2"></i>Video sobre Joyería Artesanal</h4>
+                        <div class="ratio ratio-16x9 rounded-4 overflow-hidden">
+                            <iframe src="https://www.youtube.com/embed/v8eScpGFPbA" title="YouTube video" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card border-0 shadow-lg h-100 p-3" style="border-radius: 1.5rem; background: #fff;">
+                        <h4 class="mb-3 text-center" style="color: var(--primary-color);"><i class="bi bi-geo-alt me-2"></i>Nuestra Ubicación</h4>
+                        <div class="ratio ratio-16x9 rounded-4 overflow-hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.073964479836!2d-69.9362226850957!3d18.4801016874307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89b2e2e2e2e3%3A0x2e2e2e2e2e2e2e2e!2sUNPHU!5e0!3m2!1ses!2sdo!4v1689000000000!5m2!1ses!2sdo" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Mariel Jewelry</h3>
+                <p>Descubre la elegancia en cada detalle con nuestra colección exclusiva de joyerías artesanales. Cada pieza está diseñada con pasión y cuidado para realzar tu belleza natural.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3 class="fw-bold mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Enlaces Rápidos</h3>
+                <ul class="list-unstyled ms-2">
+                    <li class="mb-2"><a class="text-decoration-none fw-semibold" style="color: #fff; transition: color 0.2s;" href="#inicio"><i class="bi bi-house-door me-2"></i>Inicio</a></li>
+                    <li class="mb-2"><a class="text-decoration-none fw-semibold" style="color: #fff; transition: color 0.2s;" href="colecciones.html"><i class="bi bi-collection me-2"></i>Colecciones</a></li>
+                    <li class="mb-2"><a class="text-decoration-none fw-semibold" style="color: #fff; transition: color 0.2s;" href="productos.html"><i class="bi bi-bag me-2"></i>Productos</a></li>
+                    <li class="mb-2"><a class="text-decoration-none fw-semibold" style="color: #fff; transition: color 0.2s;" href="#contacto"><i class="bi bi-envelope me-2"></i>Contacto</a></li>
+                    <li class="mb-2"><a class="text-decoration-none fw-semibold" style="color: #fff; transition: color 0.2s;" href="#" data-bs-toggle="modal" data-bs-target="#privacyModal"><i class="bi bi-shield-lock me-2"></i>Políticas de Privacidad</a></li>
+                    <li class="mb-2"><a class="text-decoration-none fw-semibold" style="color: #fff; transition: color 0.2s;" href="articulos.html"><i class="bi bi-newspaper me-2"></i>Artículos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Universidad Nacional Pedro Henríquez Ureña (UNPHU)</p>
+                <p><i class="fas fa-phone"></i> 829-253-7788</p>
+                <p><i class="fas fa-envelope"></i> info@marieljewelry.com</p>
+            </div>
+            <div class="footer-section">
+                <h3 class="fw-bold mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Newsletter</h3>
+                <p class="mb-2" style="color: #fffbe6;">Suscríbete para recibir nuestras últimas novedades y ofertas exclusivas.</p>
+                <form class="newsletter-form d-flex flex-column align-items-start">
+                    <div class="input-group mb-2 w-100">
+                        <span class="input-group-text bg-white border-0" style="border-radius: 1.5rem 0 0 1.5rem;"><i class="bi bi-envelope"></i></span>
+                        <input type="email" class="form-control border-0" style="border-radius: 0 1.5rem 1.5rem 0;" placeholder="Tu correo electrónico" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100" style="border-radius: 1.5rem;">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mariel Jewelry. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <button class="theme-toggle" aria-label="Cambiar tema">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+document.getElementById('aboutUsBtn').addEventListener('click', function(e) {
+  e.preventDefault();
+  var modal = new bootstrap.Modal(document.getElementById('aboutUsModal'));
+  modal.show();
+});
+document.querySelector('a[aria-label="Buscar"]').addEventListener('click', function(e) {
+  e.preventDefault();
+  var modal = new bootstrap.Modal(document.getElementById('searchModal'));
+  modal.show();
+});
+document.getElementById('searchForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const query = document.getElementById('searchInput').value.trim().toLowerCase();
+  let anchor = '';
+  if (query.includes('anillo')) anchor = '#productos';
+  else if (query.includes('collar')) anchor = '#productos';
+  else if (query.includes('brazalete')) anchor = '#productos';
+  else if (query.includes('pendiente')) anchor = '#productos';
+  else anchor = '';
+  if(anchor) {
+    var modal = bootstrap.Modal.getInstance(document.getElementById('searchModal'));
+    modal.hide();
+    setTimeout(() => {
+      window.location.hash = anchor;
+    }, 300);
+  } else {
+    document.getElementById('searchResult').innerHTML = `<div class='alert alert-info mt-2'>No se encontraron resultados.</div>`;
+  }
+});
+</script>
+</body>
+</html>

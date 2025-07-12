@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias y Artículos - Mariel Jewelry</title>
+    <meta name="description" content="Lee las últimas noticias y artículos sobre joyería artesanal.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <script>
+        // Mantener el modo oscuro al navegar entre páginas
+        (function() {
+          const savedTheme = localStorage.getItem('theme');
+          if (savedTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+          }
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm rounded-bottom sticky-top py-3 px-4">
+            <div class="container-fluid">
+                <div class="logo d-flex align-items-center">
+                    <i class="bi bi-gem me-2" style="font-size:2rem;color:var(--primary-color);"></i>
+                    <h1 class="mb-0" style="font-size:2rem;letter-spacing:2px;">Mariel Jewelry</h1>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-links">
+                        <li class="nav-item"><a class="nav-link" href="index.html#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="colecciones.html">Colecciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#enlaces-interes">Enlaces</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="articulos.html">Artículos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container my-5 py-5" style="background: linear-gradient(120deg, #fffbe6 60%, #f7e9ce 100%); border-radius: 2rem; box-shadow: 0 4px 24px #d4af3740;">
+            <h2 class="display-6 fw-bold text-center mb-4" style="color: var(--primary-color); letter-spacing: 1px;">Noticias y Artículos</h2>
+            <div class="row g-4 justify-content-center">
+                <article class="col-md-4">
+                    <div class="card h-100 border-0 shadow-lg" style="border-radius: 1.5rem;">
+                        <img src="images/elegance-collection.jpg" class="card-img-top" alt="Tendencias en Joyería 2025" style="border-radius: 1.5rem 1.5rem 0 0; height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold" style="color: var(--primary-color);">Tendencias en Joyería 2025</h5>
+                            <p class="card-text flex-grow-1">Descubre las últimas tendencias en joyería artesanal para este año: piezas minimalistas, combinaciones de metales y gemas de colores vibrantes.</p>
+                            <a href="#" class="btn btn-outline-primary mt-2" style="border-radius: 1.5rem;">Leer más</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-4">
+                    <div class="card h-100 border-0 shadow-lg" style="border-radius: 1.5rem;">
+                        <img src="images/product-1.jpg" class="card-img-top" alt="Cómo cuidar tus joyas" style="border-radius: 1.5rem 1.5rem 0 0; height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold" style="color: var(--primary-color);">¿Cómo cuidar tus joyas?</h5>
+                            <p class="card-text flex-grow-1">Aprende los mejores consejos para mantener tus joyas como nuevas: limpieza, almacenamiento y cuidados diarios para prolongar su brillo.</p>
+                            <a href="#" class="btn btn-outline-primary mt-2" style="border-radius: 1.5rem;">Leer más</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-4">
+                    <div class="card h-100 border-0 shadow-lg" style="border-radius: 1.5rem;">
+                        <img src="images/product-2.jpg" class="card-img-top" alt="Historia de la joyería artesanal" style="border-radius: 1.5rem 1.5rem 0 0; height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold" style="color: var(--primary-color);">Historia de la Joyería Artesanal</h5>
+                            <p class="card-text flex-grow-1">Un recorrido por la evolución de la joyería hecha a mano, desde las civilizaciones antiguas hasta las tendencias modernas.</p>
+                            <a href="#" class="btn btn-outline-primary mt-2" style="border-radius: 1.5rem;">Leer más</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer py-4 mt-5" style="background: #2c3e50; color: #fff;">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Mariel Jewelry. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="articulos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
